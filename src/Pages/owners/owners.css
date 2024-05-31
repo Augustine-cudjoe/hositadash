@@ -1,0 +1,18 @@
+@media screen and (max-width:1040px) {
+    #owners-menu ul{
+        justify-content: space-between;
+    }
+    h4{
+     text-transform: uppercase;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    #owners-logo{
+        justify-content: space-between;
+    }
+    #owners-content{
+        padding-inline: 50px;
+    }
+    
+}

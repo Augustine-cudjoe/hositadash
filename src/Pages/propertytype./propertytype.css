@@ -1,0 +1,19 @@
+
+
+
+@media screen and (max-width:1040px) {
+    #system{
+        justify-content: space-around;
+    } 
+    #menu-logo{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:767px) {
+    #menu-logo{
+        justify-content: space-around;
+    }
+    #content{
+        padding-inline: 50px;
+    }
+}

@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    
+
+
+}
+
+
+.left-bar{
+    position: relative;
+    background-color: #ffffff;
+    height: 400px;
+}
+.bar-wrapper{
+    max-width: 1500px;
+    width: 90%;
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    transform: translate(-50%,-50%);
+}
+.bar-group{
+    height: 300px;
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+    
+}
+ul.x-axis,ul.y-axis{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.x-axis{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.x-axis li{
+   float: left;
+   font-size: 1em;
+   color: black;
+   width: 100%; 
+   visibility: hidden;
+}
+.y-axis{
+   position: absolute;
+   text-align: right;
+   width: 100%; 
+}
+.y-axis li{
+  
+   display: block;
+   height: 50.25px;
+   width: 100%; 
+}
+.y-axis li span{
+   display: block;
+   width: 40px;
+   margin: 0 0 0 10px;
+   color: black;
+}
+.bars{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+   
+}
+.bars-group{
+    display: block;
+    
+    
+    width: 100%;
+    height:90% ;
+    position: relative;
+    left: 20%;
+    border-bottom: 2px solid gray;
+    border-bottom-width: 100%;
+    
+}
+.bar{
+    visibility: hidden;
+    height: 0;
+    width: 25%;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+     bottom: 0;
+     animation: animate-height;
+     animation-timing-function: cubic-bezier(0.35,0.95,0.99);
+     animation-duration: 0.4s;
+     animation-fill-mode: forwards;
+     cursor: pointer;
+}
+
+.bar:nth-child(1){
+    left: 70%;
+}
+.bar-1{
+    background-color: #0cd681;
+    animation-delay: 0.3s;
+    height: 90%;
+}
+
+@keyframes animate-height {
+    0%{height: 0;}
+    100%{
+        visibility: visible;
+    }
+    
+}
+
+@media screen and (max-width:1040px) {
+
+  #middle-nav ul{
+    justify-content: center;
+    }
+    ul li:nth-child(2){
+     font-size: 16px;
+    }
+    #midddle-c{
+        display: grid;
+        grid-template-columns: 2 !important;
+    }
+    #button-holder{
+        grid-template-columns: 1 !important;
+    }
+    .bars-group{
+        border: none;
+    }
+    .bars-group{
+        display: block;
+        
+        
+        width: 80%;
+        height:90% ;
+        position: relative;
+        left: 0%;
+       
+        border-bottom-width: 50%;
+        
+    }
+}
+@media screen and (max-width:767px) {
+  
+   #middle-c{
+    margin-bottom: 100px !important;
+   }
+    .card{
+        width: 80% ;
+        height: 100%;
+        margin: auto;
+        text-align: center !important;
+    }
+  
+ 
+   .card p:first-child{
+        font-size: 50px !important;
+        
+    }
+   
+    .view{
+        margin-left: 10px;
+        width: 100px ;
+       
+    }
+    .bar-wrapper p{
+        padding-left: 50px;
+        height:auto ;
+    }
+    .left-bar{
+        height: 500px;
+    }
+    .right-bar div:nth-child(1){
+        margin: auto;
+        width: 80%;
+    }
+    #green{
+        margin: auto;
+        width: 100%;
+    }
+    p.icon{
+        margin: auto;
+       
+    }
+}

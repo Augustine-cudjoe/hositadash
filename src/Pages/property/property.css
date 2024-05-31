@@ -1,0 +1,14 @@
+
+@media screen and (max-width:1040px) {
+    #prop-menu {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:767px) {
+    #prop-logo{
+        justify-content: space-around;
+    }
+    #property-c{
+        padding-inline: 50px;
+    }
+}

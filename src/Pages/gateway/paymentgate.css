@@ -1,0 +1,9 @@
+@media screen and (max-width:1040px) {
+    #menu{
+        justify-content: space-around;
+    }
+    #nav ul{
+        justify-content: space-around;
+    }
+    
+}
